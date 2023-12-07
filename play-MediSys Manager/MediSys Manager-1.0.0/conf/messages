@@ -1,0 +1,52 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+_namaDokter = Nama Dokter
+_jenisKelamin = Jenis Kelamin
+_jabatan = Jabatan
+
+_paviliun = Paviliun
+_tipeRuang = Tipe Ruang
+_tarif = Tarif
+
+
+_namaObat = Nama Obat
+_stok = Stok
+
+_namaPasien = Nama Pasien
+_jumlah = Jumlah
+
+
+_noKTP = No KTP
+_tglLahir = Tanggal Lahir
+_noTelp = No. Telp
+_alamat = Alamat
+
+_namaTindakan = Nama Tindakan
+_biayaTindakan = Biaya Tindakan
+
+
+_noPendaftaran = No. Pendaftaran
+_tipe = Tipe 
+_tglDaftar = Tanggal Pendaftaran
+_poli = Poli
+
+dokter = Dokter
+
+
+_username = Username
+_password = Password
+
+dokters = Dokter
+kamars = Kamar
+obats = Obat
+obatKeluars = Obat Keluar
+pasiens = Pasien
+pembayarans = Pembayaran
+pendaftarans = Pendaftaran
+tindakans = Tindakan
+tindakanPasiens = Tindakan Pasien
+users = User
+
+
