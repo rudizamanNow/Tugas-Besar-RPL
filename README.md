@@ -28,7 +28,7 @@ Sistem Informasi Manajemen Rumah Sakit "MediSys Manager" adalah sebuah sistem ya
 
 # Design Sistem
 1. Textual Analisys
-![gabar1](./gambar/Screeenshot (251).png)
+![gabar1](https://github.com/rudizamanNow/Tugas-Besar-RPL/blob/main/gambar/Screenshot%20(251).png)
 
 2. Usecase Diagram
 
