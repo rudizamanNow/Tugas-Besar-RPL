@@ -1,356 +1,455 @@
 /** Administration area **/
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
 #crud {
-	margin: 0;
-	padding: 0;
-	font-family: 'Helvetica', 'Arial', 'Sans';
-	font-size: 90%;
-	color: #111;
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+    color: #495057;
 }
 
 /** Header **/
 
 #crud #crudHeader {
-	background: #111111;
-	padding: 10px 20px;
+    background: #343a40;
+    padding: 10px 20px;
 }
 
 #crud #logout {
-	background: #ffffff;
-	padding: 10px 20px;
-	display: flex;
-	justify-content: end;
+    background: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #crud #logout a {
-	background: #bd0606;
-	padding: 2px 10px;
-	font-size: 90%;
-	color: #fff !important;
-	text-decoration: none;
+    background: #bd0606;
+    padding: 8px 15px;
+    font-size: 90%;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-
 #crud #crudHeader h1 {
-	margin: 0;
-	font-weight: normal;
+    margin: 0;
+    font-weight: normal;
+    color: #fff;
 }
 
 #crud #crudHeader h1 a {
-	color: gold;
-	text-decoration: none;
+    color: gold;
+    text-decoration: none;
 }
 
 /** Breadcrumb **/
 
 #crudBreadcrumb {
-	padding: 5px 20px;
-	font-size: 80%;
-	border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 90%;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 #crudBreadcrumb ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 #crudBreadcrumb li {
-	display: inline;
+    display: inline;
+    margin-right: 5px;
 }
 
 #crudBreadcrumb a {
-	color: #333;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#crudBreadcrumb li:not(:last-child):after {
+    content: '>';
+    color: #ccc;
+    margin-left: 5px;
 }
 
 #crudBreadcrumb li:last-child a {
-	color: #888;
-	text-decoration: none;
+    color: #495057;
+    text-decoration: none;
 }
+
 
 /** Flash message **/
 
 .crudFlash {
-	padding: 5px 20px;
-	border-bottom: 1px solid #ddd;
-	color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
 .flashError {
-	background: #c00;
+    background: #dc3545;
+    color: #fff;
 }
 
 .flashSuccess {
-	background: #54BD06;
+    background: #28a745;
+    color: #fff;
 }
 
 /** Content **/
 
 #crud #crudContent {
-	padding: 10px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 20px;
 }
 
 #crud #crudContent h2 {
-	color: #333;
-	font-weight: normal;
-	margin-top: 10px;
+    color: #343a40;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 #crud #crudContent a {
-	color: #444;
+    color: #007bff;
+    text-decoration: none;
 }
 
 /** Tables **/
 
 #crud #crudContent table {
-	width: 100%;
-	border: 1px solid #ddd;
-	border-top: none;
-	border-collapse: collapse;
-	table-layout: fixed;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 15px;
 }
 
 #crud #crudContent table thead tr {
-	background: #0A65AF;
+    background: #007bff;
+    color: #fff;
 }
 
 #crud #crudContent table th {
-	color: #fff;
-	font-weight: bold;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px 10px;
 }
 
 #crud #crudContent table th a {
-	color: #fff;
-	font-weight: bold;
-}
-
-#crud #crudContent table th {
-	text-align: left;
-	padding: 6px 5px;
+    color: #fff;
+    font-weight: bold;
 }
 
 #crud #crudContent table td {
-	text-align: left;
-	padding: 4px 5px;
+    text-align: left;
+    padding: 10px;
 }
 
 #crud #crudContent table td {
-	border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 #crud #crudContent table tr.even {
-	background: #f9f9f9;
+    background: #f8f9fa;
 }
 
 #crud #crudContent table tr:last-child td {
-	border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .crudSortedAsc:after {
-	content: '▼';
+    content: '▼';
 }
 
 .crudSortedDesc:after {
-	content: '▲';
+    content: '▲';
 }
 
 /** Forms **/
 
-form {
-	margin: 0;
+/* Reset default browser styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #495057;
+    outline: none;
 }
 
-input, textarea, select {
-	font-family: 'Helvetica', 'Arial', 'Sans';
-	font-size: 12px;
-}
-
-textarea {
-	padding: 2px;
-}
-
-.objectForm {
-	border: 1px solid #ddd;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
 }
 
 label {
-	display: block;
-	font-weight: bold;
-	width: 20%;
-	float: left;
-	color: #666;
-	cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #343a40;
 }
 
-.crudField {
-	padding: 10px;
-	border-bottom: 1px solid #eee;
-	position: relative;
+textarea {
+    min-height: 100px;
 }
 
-.crud_hidden {
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error styling */
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Optional: Style for form groups and additional elements */
+.form-group label {
+    display: inline-block;
+    width: 20%;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: 75%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-group .form-control {
+    width: 75%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+}
+
+/* Additional custom styling for specific elements (modify as needed) */
+.form-group .custom-checkbox input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.form-group .custom-checkbox label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+/* File input */
+input[type="file"] {
     display: none;
 }
 
-.crudButtons {
-	background: #efefef;
-	text-align: right;
-	margin: 0;
-	padding: 10px;
+.file-upload-label {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-.crudField .error {
-	color: #c00;
-	padding-left: 10px;
-	position: absolute;
-	top: 15px;
-	font-size: 80%;
+.file-upload-label:hover {
+    background-color: #0056b3;
 }
 
-.crudField .hasError {
-	color: #c00;
+.file-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #495057;
 }
 
-.crudField select[multiple] {
-	max-height: 100px;
+/* Optional: Style for specific form sections */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #343a40;
 }
 
-.crudField .crudHelp {
-	font-size: 70%;
-	color: #888;
-	display: block;
-	margin-left: 20%;
-	margin-top: 5px;
+/* Customize form elements (select, radio buttons, etc.) as needed */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #495057;
+    outline: none;
+    background-color: #fff;
 }
 
-form .currentAttachment {
-	display: block;
-	font-size: 80%;
-	margin-left: 20%;
-	padding-top: 4px;
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
 }
 
-form .removeAttachment {
-    display: block;
-    font-size: 80%;
-    margin-left: 20%;
-}
 
 /** Footer **/
 
 #crud #crudFooter {
-	font-size: 80%;
-	color: #aaa;
-	padding: 10px 20px;
-	border-top: 1px dashed #ccc;
-	border-bottom: 1px dashed #ccc;
-	margin-top: 20px;
+    font-size: 80%;
+    color: #aaa;
+    padding: 10px 20px;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    margin-top: 20px;
 }
 
 #crud #crudFooter a {
-	color: #333;
+    color: #495057;
 }
 
 /** Home **/
 
 .crudNew {
-	text-align: right !important;
+    text-align: right !important;
+    margin-top: 20px;
 }
 
 .crudNew a {
-	background: #54BD06;
-	padding: 2px 10px;
-	font-size: 90%;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	color: #fff !important;
-	text-decoration: none;
+    background: #28a745;
+    padding: 8px 15px;
+    font-size: 90%;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 .crudNew a:hover {
-	opacity: .8;
+    opacity: .8;
 }
 
 /** List **/
 
 #crudList {
-	position: relative;
+    position: relative;
 }
 
 #crudListAdd a {
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: #54BD06;
-	padding: 3px 10px;
-	font-size: 90%;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	color: #fff !important;
-	text-decoration: none;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #28a745;
+    padding: 8px 15px;
+    font-size: 90%;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 #crudListAdd a:hover {
-	opacity: .8;
+    opacity: .8;
 }
 
 #crudListSearch {
-	padding: 4px 5px;
-	border: 1px solid #ddd;
-	background: #efefef;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+    margin-top: 20px;
 }
 
 #crudListSearch input[type=text] {
-	width: 40%;
+    width: 40%;
+    padding: 5px;
 }
 
 #crudListSearch a {
-	color: #111 !important;
-	font-size: 90%;
+    color: #007bff !important;
+    font-size: 90%;
+    margin-left: 10px;
 }
 
 #crudListPagination {
-	padding: 4px 5px;
-	border: 1px solid #ddd;
-	background: #efefef;
-	border-top: 0;
-	font-size: 90%;
-	position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+    border-top: 0;
+    margin-top: 20px;
+    font-size: 90%;
+    position: relative;
 }
 
 #crudListPagination .crudCount {
-	margin: 0;
+    margin: 0;
 }
 
 #crudListPagination .crudPages {
-	margin: 0;
-	position: absolute;
-	right: 5px;
-	top: 4px;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 4px;
 }
 
 /** Show **/
 
 #crudShow {
-	position: relative;
+    position: relative;
 }
 
 .crudDelete input {
-	color: #fff;
-	border: none;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: #c00;
-	padding: 2px 10px;
-	font-size: 90%;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	cursor: pointer;
+    color: #fff;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #dc3545;
+    padding: 8px 15px;
+    font-size: 90%;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .crudDelete input:hover {
-	opacity: .7;
+    opacity: .7;
 }

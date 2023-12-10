@@ -17,7 +17,7 @@ public class pendaftaran extends Model{
 	@Required
 	public String _tipe;
 	@Required
-	public int _tglDaftar;
+	public Date _tglDaftar;
 	@Required
 	public String _poli;
 	@Required

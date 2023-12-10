@@ -35,8 +35,9 @@ _poli = Poli
 dokter = Dokter
 
 
-_username = Username
-_password = Password
+fullName = Full Name
+email = Email
+password = Password
 
 dokters = Dokter
 kamars = Kamar
@@ -49,4 +50,9 @@ tindakans = Tindakan
 tindakanPasiens = Tindakan Pasien
 users = User
 
+isAdmin = Admin
+isKeuangan = Staff Keuangan
+isApotek = Staff Apotek
+isPendaftaran = Staff Pendaftaran
+isPerawat = Perawat
 
