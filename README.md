@@ -13,18 +13,18 @@ Sistem Informasi Manajemen Rumah Sakit "MediSys Manager" adalah sebuah sistem ya
 
 * Multi user (Admin, Staff Apotek, Staff Keuangan, Staff Pendaftaran, dan Perawat)
 * Aksi Admin
-- Login, logout
-- Mengatur data User, Dokter, Tindakan, dan Kamar
+        Login, logout
+        Mengatur data User, Dokter, Tindakan, dan Kamar
 * Aksi Staff Apotek
-- Mengatur data stok obat
-- Mengatur data obat keluar
+        Mengatur data stok obat
+        Mengatur data obat keluar
 * Aksi Staff Keuangan
-- Mengatur data pembayaran
+        Mengatur data pembayaran
 * Aksi Staf Pendaftaran
-- Mengatur data pendaftaran
-- Mengatur data pasien masuk
+        Mengatur data pendaftaran
+        Mengatur data pasien masuk
 * Aksi Perawat
-- Inpit tindakan pasien
+        Inpit tindakan pasien
 
 # Design Sistem
 1. Textual Analisys
